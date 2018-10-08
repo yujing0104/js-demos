@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>对象</title>
+	<script>
+	function Person(name,age,sex){
+	this.name=name;
+	this.age=age;
+	this.sex=sex;
+	this.play=function(){
+	console.log("天天打游戏");
+	};
+	};
+
+	var per=new Person("楚天",18,"女");
+	console.log(per instanceof Person);
+	</script>
+</head>
+<body>
+
+	
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>api4</title>
+	<!-- <style>
+		#dv1{
+			width: 300px;
+			height: 200px;
+			background-color: red;
+		}
+		#dv2{
+			width: 250px;
+			height: 150px;
+			background-color: green;
+		}
+		#dv3{
+			width: 200px;
+			height: 100px;
+			background-color: blue;
+		}
+	</style> -->
+	<!-- <style>
+		img{
+			width: 200px;
+			height: 200px;
+		}
+		div{
+			position:absolute;
+		}
+	</style> -->
+	<style>
+		div{
+			position: relative;
+			width: 600px;
+			height: 600px;
+			border:2px solid yellow;
+			background-color: black;
+		}
+		span{
+			position:absolute;
+			font-size: 30px;
+			color:yellow;
+		}
+	</style>
+</head>
+<body>
+	<!-- <input type="button" value="好的呀" id="btn"/>
+	<input type="button" value="第一个按钮解绑" id="btn2"/>
+	<script src="common.js"></script>
+	<script>
+		my$("btn").onclick=function(){
+			console.log("不好吧");
+			};
+		my$("btn2").onclick=function(){
+		my$("btn").onclick=null;
+		};
+		function f1(){
+			console.log("第一个");
+		}
+		function f2(){
+			console.log("第二个");
+		}
+	
+		addEventListener(my$("btn"),"click",f1);
+		addEventListener(my$("btn"),"click",f2);
+		my$("btn").addEventListener("click",f2,false);
+		my$("btn2").onclick=function(){
+			my$("btn").removeEventListener("click",f2,false);
+		};
+		my$("btn2").onclick=function(){
+			removeEventListener(my$("btn"),"click",f1);
+		}
+		
+	</script> -->
+		
+	<!-- <div id="dv1">
+		<div id="dv2">
+			<div id="dv3"></div>
+		</div>
+	</div>
+	<script src="common.js"></script>
+	<script>
+		var objs=[my$("dv3"),my$("dv2"),my$("dv1")];
+		objs.forEach(function(ele){
+			ele.addEventListener("click",function(){
+				console.log(this.id);
+			},false);
+		});
+	
+	</script> -->
+	<!-- <input type="button" value="显示效果" id="btn"/>
+	<script src="common.js"></script>
+	<script>
+		my$("btn").onclick=f1;
+		my$("btn").onmouseover=f1;
+		my$("btn").onmouseout=f1;
+		function f1(e){
+			switch(e.type){
+				case "click":
+					alert("一个");
+					break;
+				case "mouseover":
+					this.style.backgroundColor="red";
+					break;
+				case "mouseout":
+					this.style.backgroundColor="green";
+					break;
+			}
+		}
+	</script> -->
+	<!-- <input type="button" value="停止定时器" id="btn"/>
+	<script src="common.js"></script>
+	<script>
+		var timeId= setInterval(function(){
+			alert("hello");
+		},1000);
+		my$("btn").onclick=function(){
+			window.clearInterval(timeId);
+		}
+	</script> -->
+	<!-- <input type="button" value="摇起来" id="btn1"/>
+	<input type="button" value="停止" id="btn2"/>
+	<div id="dv">
+		<img src="images/heihei.jpg" alt=""/>
+		<img src="images/lyml.jpg" alt=""/>
+	</div>
+	<script src="common.js"></script>
+	<script>
+		var timeId="";
+		my$("btn1").onclick=function(){
+			timeId=setInterval(function(){
+			var x=parseInt(Math.random()*100+1);
+			var y=parseInt(Math.random()*100+1);
+			my$("dv").style.left=x+"px";
+			my$("dv").style.top=y+"px";
+			},10);
+			
+		};
+		my$("btn2").onclick=function(){
+			clearInterval(timeId);
+		};
+	</script> -->
+	<input type="button" value="亮起来" id="btn"/>
+	<div id="dv"></div>
+	<script src="common.js"></script>
+	<script>
+		my$("btn").onclick=function(){
+			setInterval(function(){
+            my$("dv").innerHTML="<span>☆</span>";
+			var x=parseInt(Math.random()*600+1);
+			var y=parseInt(Math.random()*600+1);
+			my$("dv").firstElementChild.style.left=x+"px";
+			my$("dv").firstElementChild.style.top=y+"px";
+			},5);
+			
+		};
+	</script>
+
+	
+</body>
+</html>

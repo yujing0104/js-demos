@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>简单的原型语法</title>
+</head>
+<body>
+	<script>
+		function Student(name,age,sex){
+			this.name=name;
+			this.age=age;
+			this.sex=sex;
+		}
+		Student.prototype={
+			consrtuctor:Student,
+			height:"180",
+			weight:"65kg",
+			study:function(){
+				console.log("我爱学习");
+			},
+			eat:function(){
+				console.log("我爱吃饭");
+			}
+		};
+		var stu=new Student("凯凯",18,"男");
+		stu.study();
+		stu.eat();
+		console.dir(Student);
+		console.dir(stu);
+
+	</script>
+</body>
+</html>

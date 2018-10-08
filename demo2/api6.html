@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>title</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    div{
+      width: 200px;
+      height: 100px;
+      background-color: purple;
+      left:100px;
+      top:0;
+    }
+  </style>
+</head>
+<body>
+<input type="button" value="显示效果" id="btn"/>
+<div id="dv"></div>
+<script src="common.js"></script>
+<script>
+  my$("btn").onclick=function(){
+    console.log(getStyle(my$("dv"),"width"));
+  }
+</script>
+</body>
+</html>

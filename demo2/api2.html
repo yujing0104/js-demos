@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>bom2</title>
+	<style>
+		/* div{
+			width: 200px;
+			height: 50px;
+			background-color: green;
+			margin-top: 10px;
+		}
+		.cls{
+			background-color: yellow;
+		} */
+		/* *{
+			margin:0;
+			padding:0;
+		}
+		div{
+			width: 200px;
+			height: 150px;
+			background-color: green;
+			float: left;
+			margin-left: 10px;
+			border: 2px solid green;
+		} */
+		/* input{
+			color:gray;
+		} */
+		/* div{
+			width: 300px;
+			height: 300px;
+			border: 1px solid black;
+		} */
+		/* div{
+			width: 300px;
+			height: 200px;
+			border: 2px dotted red;
+		} */
+		/* ul{
+			list-style-type:none;
+			cursor: pointer; 
+		} */
+		
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		ul{
+			list-style-type: none; 
+		}
+		.box{
+			width: 400px;
+			height: 300px;
+			border: 1px solid #ccc;
+			margin: 0px auto;
+			overflow: hidden;
+		}
+		.hd{
+			height: 45px;
+		}
+		.hd span{
+			display: inline-block;
+			width: 90px;
+			background-color: pink;
+			line-height: 45px;
+			text-align: center;
+			cursor: pointer;
+		}
+		.hd span.current{
+			background-color: purple;
+		}
+		.bd li{
+			height: 255px;
+			background-color: purple;
+			display: none;
+		}
+		.bd li.current{
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<!-- <script>
+		function f1(){
+			alert("买不到灯啊！！！！！");
+			return false;
+		}
+	</script>
+	<a href="http://www.baidu.com" onclick="return f1()">百度</a> -->
+	<!-- <a href="http://www.baidu.com" id="ak">百度</a>
+	<script>
+		document.getElementById("ak").onclick=function(){
+			alert("被点了");
+			return false;
+		}
+	</script> -->
+
+
+	<!-- <a href="images/1.jpg" id="ak"><img src="images/1-small.jpg" alt=""></a>
+	<img src="" alt="" id="big">
+	<script src="common.js"></script>
+	<script>
+		my$("ak").onclick=function(){
+			my$("big").src=this.href;
+			return false;
+		}	
+	</script> -->
+
+
+
+
+
+
+
+
+	<!-- <input type="button" value="隔行变色" id="btn"/>
+	<ul id="uu">
+		<li>11</li>
+		<li>22</li>
+		<li>33</li>
+		<li>44</li>
+		<li>55</li>
+		<li>66</li>
+		<li>77</li>
+		<li>88</li>
+	</ul>
+	<script src="common.js"></script>
+	<script>
+		var list=document.getElementsByTagName("li");console.log(list.length);
+		my$("btn").onclick=function(){
+			for(var i=0;i<list.lenght;i++){
+				if(i%2==0){
+					list[i].style.backgroundColor="pink";
+				}else{
+					list[i].style.backgroundColor="yellow";
+				}
+			}
+		};
+	</script> -->
+
+
+
+
+
+
+
+
+
+
+	<!-- <ul>
+		<li>11</li>
+		<li>22</li>
+		<li>33</li>
+		<li>44</li>
+		<li>55</li>
+		<li>66</li>
+		<li>77</li>
+		<li>88</li>
+	</ul>
+	<script src="common.js"></script>
+	<script>
+		var list=document.getElementsByTagName("li");
+		for(var i=0;i<list.length;i++){
+			list[i].onmouseover=function(){
+				this.style.backgroundColor="yellow";
+			};
+			list[i].onmouseout=function(){
+				this.style.backgroundColor="";
+			};
+		}
+	</script> -->
+
+
+	<!-- <input type="button" value="显示效果" id="btn"/><br/>
+	<input type="text" value="您好" name="name1"/><br/>
+	<input type="text" value="您好" name="name2"/><br/>
+	<input type="text" value="您好" name="name1"/><br/>
+	<input type="text" value="您好" name="name4"/><br/>
+	<input type="text" value="您好" name="name1"/><br/>
+	<input type="text" value="您好" name="name6"/><br/>
+	<script src="common.js"></script>
+	<script>
+		my$("btn").onclick=function(){
+			var obj=document.getElementsByName("name1");
+			for(i=0;i<obj.length;i++){
+				obj[i].value="我很好";
+			}
+		}
+	</script> -->
+
+	<!-- <p class="cls">这是第一个p</p>
+	<p>这是第二个p</p>
+	<span class="cls">这是第一个span</span><br>
+	<span>这是第二个span</span><br/>
+	<div class="cls">这是第一个div</div>
+	<div>这是第二个div</div>
+	<input type="button" value="显示效果" id="btn"><br/>
+	<script src="common.js"></script>
+	<script>
+		my$("btn").onclick=function(){
+			var obj=document.getElementsByClassName("cls");
+			for(i=0;i<obj.length;i++){
+				obj[i].style.backgroundColor="red";
+			}
+		};
+	</script> -->
+
+	<!-- <div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<script src="common.js"></script>
+	<script>
+		var obj=document.getElementsByTagName("div");
+		for(i=0;i<obj.length;i++){
+			obj[i].onmouseover=function(){
+				this.style.border="2px solid red";
+			};
+			obj[i].onmouseout=function(){
+				this.style.border="";
+			};
+		}
+	</script>
+	 -->
+
+
+	 <!-- <input type="text" value="请输入文本内容" id="txt"/>
+	 <script src="common.js"></script>
+	 <script>
+	 	
+	 	my$("txt").onfocus=function(){
+	 		if(this.value=="请输入文本内容"){
+	 			this.value="";
+	 			this.style.color="black";
+	 		}
+	 	};
+	 	my$("txt").onblur=function(){
+	 		if(this.value==""){
+	 			this.value="请输入文本内容";
+	 			this.style.color="gray";
+	 		}
+	 	};
+	 </script> -->
+	 <!-- <input type="button" value="设置值" id="btn"/>
+	 <div id="dv">hh</div>
+	 <script src="common.js"></script>
+	 <script>
+	 	function setInnerText(element,text){
+	 		if(typeof element.textContent=="undefined"){
+	 			element.innerText=text;
+	 		}else{
+	 			element.textContent=text;
+	 		}
+	 	};
+	 
+	    function getInnerText(element){
+	 		if(typeof element.textContent=="undefined"){
+	 			return element.innerText;
+	 		}else{
+	 			return element.textContent;
+	 		}
+	 	};
+	 
+	 
+	 	my$("btn").onclick=function(){
+	 		console.log(setInnerText(my$("dv"),"xixi"));
+	 		//console.log(getInnerText(my$("dv")));
+	 	}
+	 </script> -->
+
+
+	 <!-- <input type="button" value="显示效果" id="btn"/>
+	 <div id="dv"></div>
+	 <script src="common.js"></script>
+	 <script>
+	 	my$("btn").onclick=function(){
+	 		my$("dv").innerText="哈哈";
+	 	};
+     </script> -->
+	 <!-- <ul id="uu">
+	 	<li score="10">一一的成绩</li>
+	 	<li score="20">二二的成绩</li>
+	 	<li score="30">三三的成绩</li>
+	 	<li score="40">四四的成绩</li>
+	 	<li score="50">五五的成绩</li>
+	 	<li score="60">六六的成绩</li>
+	 </ul>
+	 	<script src="common.js"></script>
+	 	<script>
+	 		var obj=document.getElementsByTagName("li");
+	 		for(i=0;i<obj.length;i++){
+	 			obj[i].onclick=function(){
+	 				alert(this.getAttribute("score"));
+	 			}
+	 		};
+	 	</script> -->
+
+
+
+	<!-- <ul id="uu">
+	 	<li>一一的成绩</li>
+	 	<li>二二的成绩</li>
+	 	<li>三三的成绩</li>
+	 	<li>四四的成绩</li>
+	 	<li>五五的成绩</li>
+	 	<li>六六的成绩</li>
+	 </ul>
+	 	<script src="common.js"></script>
+	 	<script>
+	 		var obj=document.getElementsByTagName("li");
+	 		for(i=0;i<obj.length;i++){
+	 			obj[i].setAttribute("score",(i+1)*10);
+	 			obj[i].onclick=function(){
+	 				console.log(this.getAttribute("score"));
+	 			}
+	 		};
+	 	</script> -->
+	 <div class="box" id="box">
+	 	<div class="hd">
+	 		<span class="current">体育</span>
+	 		<span>娱乐</span>
+	 		<span>新闻</span>
+	 		<span>综合</span>
+	 	</div>
+	 	<div class="bd">
+	 		<ul>
+	 			<li class="current">我是体育模块</li>
+	 			<li>我是娱乐模块</li>
+	 			<li>我是新闻模块</li>
+	 			<li>我是综合模块</li>
+	 		</ul>
+	 	</div>
+	 </div>
+	 <script src="common.js"></script>
+	 <script>
+	 	var box=my$("box");
+	 	var hd=box.getElementsByTagName("div")[0];
+	 	var bd=box.getElementsByTagName("div")[1];
+	 	var spans=hd.getElementsByTagName("span");
+	 	var list=bd.getElementsByTagName("li");
+	 	for(var i=0;i<spans.length;i++ ){
+	 		spans[i].setAttribute("index",i);
+	 		spans[i].onclick=function(){
+	 			for(var j=0;j<spans.length;j++){
+	 				spans[j].removeAttribute("class");
+	 			}
+	 			this.className="current";
+	 			var num=this.getAttribute("index");
+	 			for(var k=0;k<list.length;k++){
+	 				list[k].removeAttribute("class");
+	 			}
+	 			list[num].className="current";
+	 		};
+	 	}
+	 </script>
+</body>
+</html>

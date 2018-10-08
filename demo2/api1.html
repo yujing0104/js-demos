@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>document</title>
+	<!-- <style>
+		.cls{
+			width: 300px;
+			height: 200px;
+			background-color: pink;
+			display: block;
+		}	
+	</style> -->
+	<style>
+		.cls{
+			background-color: black;
+		}
+	</style>
+</head>
+<body>
+	<!-- <input type="button" value="显示效果" id="btn"/>
+	<script>
+		document.getElementById("btn").onclick=function(){
+			alert("哈哈，我又变瘦了");
+		};
+	</script> -->
+
+	<!-- <input type="button" value="显示图片" id="btn"/>
+	 <img src="" alt="" id="img"/>
+	 <script>
+	 	document.getElementById("btn").onclick=function(){
+	 		var obj=document.getElementById("img");
+	 		obj.src="images/liuyan.jpg";
+	 		obj.width="300";
+	 		obj.height="400";
+	 	}
+	 </script> --> 
+
+	<!-- <input type="button" value="设置p标签的内容" id="btn"/>
+	<p id="p1">我是一个p 标签</p>
+	<script>
+		document.getElementById("btn").onclick=function(){
+			document.getElementById("p1").innerText="这是一个p";
+		}
+	</script> -->
+	
+	<!-- <input type="button" value="对a标签进行操作" id="btn"/>
+	<a href="http://www.baidu.com" id="a">百度</a>
+	<script>
+		document.getElementById("btn").onclick=function(){
+			var obj=document.getElementById("a");
+			obj.href="http://www.weibo.com";
+			obj.innerText="新浪微博";
+		}
+	</script> -->
+
+	<!-- <input type="button" value="修改p标签" id="btn"/>
+	<div id="div1">
+		<p>我是一个p标签</p>
+		<p>我是一个p标签</p>
+		<p>我是一个p标签</p>
+		<p>我是一个p标签</p>
+		<p>我是一个p标签</p>
+	</div>
+	<div id="div2">
+		<p>那我难道不是p标签？</p>
+		<p>那我难道不是p标签？</p>
+		<p>那我难道不是p标签？</p>
+		<p>那我难道不是p标签？</p>
+		<p>那我难道不是p标签？</p>
+	</div>
+	<script>
+		document.getElementById("btn").onclick=function(){
+			var obj=document.getElementById("div1").getElementsByTagName("p");
+			for(var i=0;i<obj.length;i++){
+				obj[i].innerText="是我是我就是我";
+			}
+		}
+	</script> -->
+
+	<!-- <input type="button" value="显示效果" id="btn"/>
+	<img src="images/canjingdong.jpg" alt="哈哈" title="噢噢"/>
+	<script>
+		document.getElementById("btn").onclick=function(){
+			var obj=document.getElementsByTagName("img");
+			obj[0].alt="改了";
+			obj[0].title="对的吧";
+		};
+	</script> -->
+
+	<!-- <input type="button" value="修改文本框的值" id="btn"/><br/>
+	<input type="text" value=""><br/>
+	<input type="text" value=""><br/>
+	<input type="text" value=""><br/>
+	<input type="text" value=""><br/>
+	<input type="text" value=""><br/>
+	<input type="text" value=""><br/>
+	<input type="text" value=""><br/>
+	<input type="text" value=""><br/>
+	<script>
+		document.getElementById("btn").onclick=function(){
+			var obj=document.getElementsByTagName("input");
+			for(i=0;i<obj.length;i++){
+				if(obj[i].type!="button"){
+					obj[i].value="我有点饿";
+				}
+			}
+		}
+	</script> -->
+
+	<!-- <input type="button" value="我好饿"/>
+	<input type="button" value="我好饿"/>
+	<input type="button" value="我好饿"/>
+	<input type="button" value="我好饿"/>
+	<input type="button" value="我好饿"/>
+	<input type="button" value="我好饿"/>
+	<input type="button" value="我好饿"/>
+	<input type="button" value="我好饿"/>
+	<script>
+		var obj=document.getElementsByTagName("input");
+		for(i=0;i<obj.length;i++){
+			obj[i].onclick=function(){
+				for(j=0;j<obj.length;j++){
+				obj[j].value="我好饿";  
+			}
+			this.value="少吃点吧你";
+			}
+		}
+	</script> -->
+
+	<!-- <input type="button" value="显示大图" id="btn"/>
+	<img src="images/1-small.jpg" alt="" id="img">
+	<script>
+		function my$(id){
+			return document.getElementById(id);
+		}
+		my$("btn").onclick=function(){
+			my$("img").src="images/1.jpg";
+		}; 
+	</script> -->
+	
+	<!-- <input type="button" value="选中默认值" id="btn"/>
+	<select name="" id="ss">
+		<option value="">一个</option>
+		<option value="">两个</option>
+		<option value="" id="sel">三个</option>
+		<option value="">四个</option>
+		<option value="">五个</option>
+	</select>
+	<script src="common.js"></script>
+	<script>
+		my$("btn").onclick=function(){
+			my$("sel").selected=true;
+		}
+	</script> -->
+
+	<!-- <input type="button" value="设置样式" id="btn"/>
+	<div id="dv"></div>
+	<script src="common.js"></script>
+	<script>
+		my$("btn").onclick=function(){
+			my$("dv").style.width="300px";
+			my$("dv").style.height="200px";
+			my$("dv").style.backgroundColor="yellow";
+		}
+	</script> -->
+
+	<!-- <input type="button" value="隐藏" id="btn"/>
+	<div id="dv">
+		
+	</div>
+	<script src="common.js"></script>
+	<script>
+		my$("btn").onclick=function(){
+			if(my$("btn").value=="隐藏"){
+				my$("dv").style.display="none";
+				this.value="显示";
+			}else if(my$("btn").value=="显示"){
+				my$("dv").style.display="block";
+				this.value="隐藏";
+			}
+		}
+	</script> -->
+
+	<!-- <input type="button" value="设置样式" id="btn"/>
+	<div id="dv"></div>
+	<script src="common.js"></script>
+	<script>
+		my$("btn").onclick=function(){
+			my$("dv").className="cls";
+		}
+	</script> -->
+
+
+	<input type="button" value="开/关灯" id="btn"/>
+	<script src="common.js"></script>
+	<script>
+		my$("btn").onclick=function(){
+			document.body.className=document.body.className!="cls"?"cls":"";
+		}
+	</script>
+
+
+
+
+
+
+</body>
+</html>
